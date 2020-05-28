@@ -4,14 +4,27 @@ body
 {
 	font-family: 'Jost', sans-serif;
 }
+html
+{
+	scroll-behavior: smooth;
+}
 main
 {
 	overflow: hidden;
 }
+.sticky {
+    position: fixed !important;
+    z-index: 99999999999999999999 !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    padding: 20px !important;
+    box-shadow: 2px 3px 6px 0px #635d5d0f !important;
+}
 .header-section
 {
 	position: relative;
-	background: url(../images/b02.webp) no-repeat center center;
+	background: url(../images/b02.png) no-repeat center center;
 	background-size: cover;
 	padding-bottom: 0px;
 	border-bottom: 10px solid #fff;
@@ -29,27 +42,88 @@ main
 }
 .celed-area h1
 {
+	
+}
+.celed-area .one
+{
 	position: relative;
     color: #FCD300;
     font-weight: 900;
     text-transform: uppercase;
-    font-size: 45px;
+    z-index: 9;
+    font-size: 50px;
+    font-family: "Poppins", sans-serif;
+    /*width: 30%;*/
+    text-align: left;
+}
+
+.celed-area .one:before
+{
+	position: absolute;
+    content: "CELEBRATE";
+    text-transform: uppercase;
+    color: #688E72;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    top: 2px;
+    font-size: 50px;
+    left: 2px;
+    right: 0;
+    z-index: -1;
+    bottom: 0;
+}
+.celed-area .two
+{
+	position: relative;
+    color: #FCD300;
+    font-weight: 900;
+    font-size: 50px;
+    text-transform: uppercase;
     z-index: 9;
     font-family: "Poppins", sans-serif;
     /*width: 30%;*/
     text-align: left;
 }
-.celed-area h1:before
+.celed-area .two:before
 {
 	position: absolute;
-    content: "CELEBRATE NATIONAL MOJITO DAY!";
+    content: "NATIONAL";
     text-transform: uppercase;
     color: #688E72;
     font-weight: 900;
+    font-size: 50px;
     text-transform: uppercase;
-    font-size: 45px;
     font-family: "Poppins", sans-serif;
-    top: 3px;
+    top: 2px;
+    left: 2px;
+    right: 0;
+    z-index: -1;
+    bottom: 0;
+}
+.celed-area .three
+{
+	position: relative;
+    color: #FCD300;
+    font-weight: 900;
+    font-size: 50px;
+    text-transform: uppercase;
+    z-index: 9;
+    font-family: "Poppins", sans-serif;
+    /*width: 30%;*/
+    text-align: left;
+}
+.celed-area .three:before
+{
+	position: absolute;
+    content: "MOJITO  DAY!";
+    text-transform: uppercase;
+    color: #688E72;
+    font-weight: 900;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    top: 2px;
     left: 2px;
     right: 0;
     z-index: -1;
@@ -198,7 +272,7 @@ main
 	text-transform: uppercase;
 	font-size: 45px;
 	font-family: "Poppins", sans-serif;
-	top: 3px;
+	top: 1px;
     left: 2px;
 	right: 0;
 	z-index: -1;
@@ -349,7 +423,7 @@ main
 }
 p
 {
-	color: #777374;
+	color: #4a4a4a;
 }
 .custome-pad-menu p b span
 {
@@ -357,7 +431,7 @@ p
 }
 .custome-pad-menu p
 {
-	color: #777374;
+	color: #707070;
 }
 .custome-pad-menu
 {
@@ -435,10 +509,22 @@ p
 {
 	display: none;
 }
+.social-icon a i
+{
+	color: #949494;
+	font-size: 12px;
+	padding: 10px;
+}
+.celed-area h1 , .celed-area h1:before
+{
+	width: 93%;
+}
 /*media query*/
+
 
 @media(max-width:425px)
 {
+	
 	.md-inline-block
 	{
 		display: inline-block !important; 
@@ -488,15 +574,79 @@ p
 	.md-d-none
 	{
 		display: none;
-	}
-	.celed-area h1 , .papa-area-section h1 , .cha-section h1 , .wine-area h1 , .beer-area h1
+	} 
+	.celed-area .one , .celed-area .one:before , .celed-area .two , .celed-area .two:before , .celed-area .three , .celed-area .three:before
 	{
-		font-size: 35px;
+		font-size: 30px !important;
+		/*width: 85%;*/
 	}
-	.celed-area h1:before , .papa-area-section h1:before , .cha-section h1:before , .wine-area h1:before , .beer-area h1:before
+	.papa-area-section h1 , .rum-area h1 , .wine-area h1 , .beer-area h1
 	{
-		font-size: 35px;
+		font-size: 30px;
+		text-align: center;
 	}
+	.papa-area-section h1:before , .rum-area h1:before , .wine-area h1:before , .beer-area h1:before
+	{
+		font-size: 30px;
+		text-align: center;
+	}
+	.cha-section h1
+	{
+		font-size: 29px;
+		text-align: center;
+	}
+	.cha-section h1:before	{
+		font-size: 29px;	
+		text-align: center;
+		top: 1px;
+    	left: -30px;
+	}
+	.mambo-Txt h1
+	{
+		font-size: 29px;
+		text-align: center;
+	}
+	.mambo-Txt h1:before
+	{
+		font-size: 29px;	
+		text-align: center;
+		top: 1px;
+    	left: -14px;
+	}
+	.rumba-area h1
+	{
+		font-size: 29px;
+		text-align: center;
+	}
+	.rumba-area h1:before
+	{
+		font-size: 29px;	
+		text-align: center;
+		top: 1px;
+    	left: -14px;
+	}
+	/*.celed-area h1 , .papa-area-section h1 , .cha-section h1 ,  .mambo-Txt h1 , .rumba-area h1 
+	{
+		font-size: 30px;
+		text-align: center;
+	}
+	.celed-area h1:before , .papa-area-section h1:before , .cha-section h1:before , .mambo-Txt h1:before
+	{
+		font-size: 30px;
+		text-align: center;
+		top: 2px;
+    	left: -15px;
+	}
+	.rum-area h1 , .rum-area h1:before , .beer-area h1 , .beer-area h1:before , .wine-area h1 , .wine-area h1:before
+	{
+		font-size: 30px;
+		text-align: center;
+	}
+	.cha-section h1:before
+	{
+		top: -1px;
+    left: -32px;
+	}*/
 	.img-gallery .img-gallery-two {
     	position: absolute;
     	left: -13px;
@@ -505,7 +655,7 @@ p
 	}
 	.slider-one-area
 	{
-		padding-bottom:150px !important; 
+		padding-bottom:270px !important; 
 		padding: 40px 0;
 	}
 	.img-gallery .img-gallery-one
@@ -542,11 +692,11 @@ p
 	}
 	.cha-Txt p
 	{
-		font-size: 12px;
+		font-size: 14px;
 	}
 	p
 	{
-		font-size: 12px;
+		font-size: 16px;
 	}
 	.custom-block-area
 	{
@@ -556,9 +706,9 @@ p
 	{
 		display: block;
 	}
-	.mambo-area .w-100
-	{
-		width: 80% !important;
+
+{
+		width: 75% !important;
 	}
 	.mambo-area .one-img
 	{
@@ -638,5 +788,26 @@ p
 	.bother-Txt h5
 	{
 		font-size: 16px;
+	}
+	.respo-mobile-wine
+	{
+		margin-left: 40px;
+		margin-right: 20px;
+	}
+	.respo-mobile-light
+	{
+		margin-left: 20px !important;
+	}
+	.respo-mobile-Hurricane
+	{
+		margin-left: 10px;
+	}
+	.respo-mobile-cele
+	{
+		margin-left: 63px;
+	}
+	.cha-img img , .mambo-area img
+	{
+		width: 70% !important;
 	}
 }
