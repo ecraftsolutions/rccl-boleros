@@ -24,7 +24,7 @@ main
 .header-section
 {
 	position: relative;
-	background: url(../images/b02.png) no-repeat center center;
+	background: url(../images/b02.jpg) no-repeat center center;
 	background-size: cover;
 	padding-bottom: 0px;
 	border-bottom: 10px solid #fff;
@@ -51,7 +51,7 @@ main
     font-weight: 900;
     text-transform: uppercase;
     z-index: 9;
-    font-size: 50px;
+    font-size: 45px;
     font-family: "Poppins", sans-serif;
     /*width: 30%;*/
     text-align: left;
@@ -67,7 +67,7 @@ main
     text-transform: uppercase;
     font-family: "Poppins", sans-serif;
     top: 2px;
-    font-size: 50px;
+    font-size: 45px;
     left: 2px;
     right: 0;
     z-index: -1;
@@ -78,7 +78,7 @@ main
 	position: relative;
     color: #FCD300;
     font-weight: 900;
-    font-size: 50px;
+    font-size: 45px;
     text-transform: uppercase;
     z-index: 9;
     font-family: "Poppins", sans-serif;
@@ -92,7 +92,7 @@ main
     text-transform: uppercase;
     color: #688E72;
     font-weight: 900;
-    font-size: 50px;
+    font-size: 45px;
     text-transform: uppercase;
     font-family: "Poppins", sans-serif;
     top: 2px;
@@ -106,7 +106,7 @@ main
 	position: relative;
     color: #FCD300;
     font-weight: 900;
-    font-size: 50px;
+    font-size: 45px;
     text-transform: uppercase;
     z-index: 9;
     font-family: "Poppins", sans-serif;
@@ -120,7 +120,7 @@ main
     text-transform: uppercase;
     color: #688E72;
     font-weight: 900;
-    font-size: 50px;
+    font-size: 45px;
     text-transform: uppercase;
     font-family: "Poppins", sans-serif;
     top: 2px;
@@ -137,7 +137,7 @@ main
 	/*height: 100vh;*/
 	padding: 120px 0;
 }
-.img-gallery 
+./*img-gallery 
 {
 	position: relative;
 }
@@ -150,6 +150,33 @@ main
 	position: absolute;
 	left: -18%;
 	top: 18%;
+}*/
+.img-gallery .img-gallery-two {
+	position: absolute;
+	left: -13px;
+	top: 63%;
+	transform: rotate(-6deg);
+}
+.slider-one-area
+{
+	padding-bottom:350px !important; 
+	padding: 40px 0;
+}
+.img-gallery .img-gallery-one
+{
+	position: relative;
+	z-index: 99999;
+	left: 5%;
+}
+.img-gallery .img-gallery-two {
+	position: absolute;
+	left: -13px;
+	top: 63%;
+	transform: rotate(-6deg);
+}
+.img-gallery .w-100
+{
+	width: 82% !important;
 }
 .bother-Txt
 {
@@ -337,7 +364,14 @@ main
 {
 	font-size: 14px;
 }
-
+.mambo-area
+{
+	margin-left: 50px;
+}
+.respo-mobile-light
+{
+	transform: rotate(4deg);
+}
 .slider-six-area
 {
 	position: relative;
@@ -523,8 +557,12 @@ p
 
 
 @media(max-width:425px)
-{
-	
+{	
+	.slider-eig-area
+	{
+		background: url(../images/mobileview/JPGsNoText_NoImages/03_Boleros_JPEG_0519CL_R28.jpg) no-repeat center center;
+		background-size: cover;
+	}
 	.md-inline-block
 	{
 		display: inline-block !important; 
@@ -582,12 +620,12 @@ p
 	}
 	.papa-area-section h1 , .rum-area h1 , .wine-area h1 , .beer-area h1
 	{
-		font-size: 30px;
+		font-size: 26px;
 		text-align: center;
 	}
 	.papa-area-section h1:before , .rum-area h1:before , .wine-area h1:before , .beer-area h1:before
 	{
-		font-size: 30px;
+		font-size: 26px;
 		text-align: center;
 	}
 	.cha-section h1
@@ -650,12 +688,12 @@ p
 	.img-gallery .img-gallery-two {
     	position: absolute;
     	left: -13px;
-    	top: 63%;
+    	top: 57%;
     	transform: rotate(-6deg);
 	}
 	.slider-one-area
 	{
-		padding-bottom:270px !important; 
+		padding-bottom:180px !important; 
 		padding: 40px 0;
 	}
 	.img-gallery .img-gallery-one
@@ -809,5 +847,9 @@ p
 	.cha-img img , .mambo-area img
 	{
 		width: 70% !important;
+	}
+	.img-gallery .w-100
+	{
+		width: 100% !important;
 	}
 }
